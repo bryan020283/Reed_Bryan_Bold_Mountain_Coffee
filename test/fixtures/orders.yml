@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  qty: 1
+  details: MyText
+  pick_up_time: 2015-01-24 18:25:45
+
+two:
+  name: MyString
+  qty: 1
+  details: MyText
+  pick_up_time: 2015-01-24 18:25:45
