@@ -20,9 +20,9 @@
 	 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				</br></br></br></br></br></br></br>
-				<li class = "big-font"><%= link_to "Order Ahead", new_order_path %></li>
-		        <li class = "big-font"><%= link_to "About Us", welcome_about_us_path %></li>
-		        <li class = "big-font"> <%= link_to "Contact Us", welcome_contact_us_path %> </li>
+				<li><%= link_to "Order Ahead", new_order_path, :class => "big-font" %></li>
+		        <li><%= link_to "About Us", welcome_about_us_path, :class => "big-font"%></li>
+		        <li><%= link_to "Contact Us", welcome_contact_us_path, :class => "big-font" %> </li>
 			</ul>
 			<p class="navbar-text pull-right">
 				<% if user_signed_in? %>
@@ -42,12 +42,20 @@
 	<% if alert %>
 	  <p class="alert alert-danger"><%= alert %></p>
 	<% end %>
+	
 	<div class = "container">
 		<%= yield %>
 	</div>
 
 	<div class=" footer">
-
+		<ul class="nav navbar-nav">
+		</br></br></br>
+			<li><%= link_to "Order Ahead", new_order_path, :class => "footer-font" %></li>
+	        <li><%= link_to "About Us", welcome_about_us_path, :class => "footer-font" %></li>
+	        <li><%= link_to "Contact Us", welcome_contact_us_path, :class => "footer-font" %> </li>
+	        <text> Copyright2015 </text>
+		</ul></br></br></br>
+		
 	</div>
 </body>
 </html>

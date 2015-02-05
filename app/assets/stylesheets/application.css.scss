@@ -24,10 +24,6 @@
 	font-family: HELVETICA NEUE;
 }
 
-.big-font{
-	font-size: 2em;
-	color: white;
-}
 .navbar{
 	background-image: url("header.jpg");
 	background-size: 100%;
@@ -41,11 +37,17 @@
 		font-family: Impact, Charcoal, sans-serif;
 	}
 	.navbar-nav{
-		li{
+		.big-font{
 			background-color: none;
-			padding-right: 10px;
-			padding-left: 10px;
-			border-right: 2px solid white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-right: 20px;
+			padding-left: 20px;
+			border-right: 3px solid white;
+			line-height: 20px;
+			font-size: 2.3em;
+			color: white;
+			font-weight: bold;
 		}
 	}
 }
@@ -62,4 +64,34 @@
 	height: 125px;
 	bottom: 0;
 	margin-bottom: 0;
+	height: 150px;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1em;
+	ul {
+		margin-left: 150px;
+		li >
+		.footer-font{
+			background-color: none;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-right: 15px;
+			padding-left: 15px;
+			border-right: 3px solid white;
+			line-height: 20px;
+			font-size: 1.6em;
+			color: white;
+			font-weight: bold;
+		}
+		.footer-font:hover{
+			background-color: black;
+		}
+	}
 }
+text{
+	font-size: 1.6em;
+	color: white;
+	font-weight: bold;
+	margin-left: 100px;
+
+}
+

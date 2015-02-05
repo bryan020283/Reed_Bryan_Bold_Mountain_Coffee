@@ -1,13 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  qty: 1
-  details: MyText
-  pick_up_time: 2015-01-24 18:25:45
+  customer_name: MyString
+  java_qty: 1
+  beans_qty: 1
+  sandwich_qty: 1
+  order_notes: MyText
+  pick_up_time: 2015-02-02 22:20:47
 
 two:
-  name: MyString
-  qty: 1
-  details: MyText
-  pick_up_time: 2015-01-24 18:25:45
+  customer_name: MyString
+  java_qty: 1
+  beans_qty: 1
+  sandwich_qty: 1
+  order_notes: MyText
+  pick_up_time: 2015-02-02 22:20:47

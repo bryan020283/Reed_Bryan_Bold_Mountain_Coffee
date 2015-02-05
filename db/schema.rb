@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150124232545) do
+ActiveRecord::Schema.define(version: 20150205001442) do
 
   create_table "orders", force: true do |t|
-    t.string   "name"
-    t.integer  "qty"
-    t.text     "details"
+    t.string   "customer_name"
+    t.integer  "java_qty"
+    t.integer  "beans_qty"
+    t.integer  "sandwich_qty"
+    t.text     "order_notes"
     t.time     "pick_up_time"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -35,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150124232545) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
