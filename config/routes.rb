@@ -1,13 +1,25 @@
 Rails.application.routes.draw do
 
+  get 'about/index'
+
+  namespace :admin do
+    resources :orders do 
+      delete 'destroy'
+    end
+  end
+
+  get '/admin' => 'admin/orders#index'
+
   resources :orders
-  
+  resources :contacts, only: :index
+
   get 'welcome/index'
   get 'welcome/about_us'
-  get 'welcome/contact_us'
+  get 'contacts/new'
+
   root to: "welcome#index"
 
- 
+  match '/contacts' => 'contacts#new', :via => :post
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

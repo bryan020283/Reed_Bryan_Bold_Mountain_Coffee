@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
-
+	protect_from_forgery except: :tokeninput
+	# before_filter :authenticate_user!
 	def new
 		@order = Order.new
 	end
