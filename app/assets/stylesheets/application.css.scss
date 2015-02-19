@@ -21,7 +21,7 @@
 }
 
 .chosen_font{
-	font-family: HELVETICA NEUE;
+	font-family: Helvetica Neue;
 }
 
 .navbar{
@@ -51,11 +51,21 @@
 		}
 	}
 }
+
+
 .thumbnail{
 	border: 0px;
 	img{
-		border: 2px solid green;
-		height: 300px;
+		height: 250px;
+		width: 350px;
+	}
+	.caption{
+		padding-left: 0px;
+		padding-right: 0px;
+		p{
+			font-family: Helvetica Neue;
+			font-size: 1.5em;
+		}
 	}
 }
 
@@ -82,6 +92,7 @@
 			color: white;
 			font-weight: bold;
 		}
+
 		.footer-font:hover{
 			background-color: black;
 		}
@@ -94,9 +105,19 @@ text{
 	margin-left: 100px;
 
 }
-
-.jumbotron{
-	background-color: #965350;
+.abo{
+	background-color: white;
+	font-family: Helvetica Neue;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	border: 10px solid black;
+	border-radius: 0px !important;
+}
+.contact{
+	background-color: rgb(155,138,129);
+	font-family: Helvetica Neue;
+	font-size: 1.5em;
 	margin-bottom: 0px;
 	padding-left: 0px;
 	border: 1px solid black;
@@ -115,4 +136,81 @@ contactH{
 	width: 100%;
 	height: 1000px;
 
+}
+.form-control{
+	background-color: gray;
+	border: 2px solid black;
+}
+
+.font{
+	font-family: Helvetica Neue;
+	font-size: 1.5em;
+}
+.btn-send{
+	width: 150px;
+	height: 50px;
+	font-size: 1.5em;
+	color: white;
+	background-color: rgb(121,84,53);
+	margin-bottom: 0px;
+}
+
+.about_header{
+	font-size: 2em;
+	color: black;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+
+.navbar-link{
+		font-size: 1.3em;
+		font-family: Impact, Charcoal, sans-serif;
+		color: white;
+		padding-left: 5px;
+		padding-right: 7px;
+		border-right: 2px solid white;
+		line-height: 5px;
+}
+.navbar-link:last-child{
+	border-right: none;
+}
+
+.navbar-inverse .navbar-link{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+thanks{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 1em;
+	color: white;
+}
+.sign_in{
+	color: white;
+	font-size: 1.5em;
+}
+.dev{
+	background-color: white;
+	border-radius: 0px !important;
+	border: none;
+}
+
+.devise{
+	border: 1px solid black;
+	background-color: rgb(102,51,51);
+	color: white;
+	font-size: 1.3em;
+	font-family: Helvetica Nueu;
+	max-width: 800px;
+	padding-top: 0px;
+}
+.btn-reg{
+	width: 150px;
+	height: 50px;
+	font-size: 1.2em;
+	color: white;
+	background-color: black;
+	border: none;
+	margin-bottom: 0px;
 }

@@ -6,11 +6,8 @@
 		      	<%= image_tag("Coffee-Cup.jpg")%></br>
 				<div class="caption">
 				    <p class = "chosen_font">
-				    	Order one of our choice lattesfrom the espresso bar.  We have many varieties to choosefrom.  
+				    	Order one of our choice lattes from the espresso bar. We have many varieties to choose from.  
 				    </p>
-				    </br>
-				    <%= f.label :java_qty, "Qty:" %>
-				    <%= f.number_field :java_qty, in: 1..20, step: 1 %>
 				</div>
 			</div>
 		</div>
@@ -20,11 +17,8 @@
 		      	<%= image_tag("beans.jpg")%></br>
 				<div class="caption">
 				    <p class = "chosen_font">
-				    	Choose from our dark, light and medium roast beans. We bag jusst before you arrive.  
+				    	Choose from our dark, light and medium roast beans. We bag  just before you arrive.  
 				    </p>
-				    </br>
-				    <%= f.label :beans_qty, "Qty:" %>
-				    <%= f.number_field :beans_qty, in: 1..20, step: 1 %>
 				</div>
 			</div>
 		</div>
@@ -34,29 +28,53 @@
 		      	<%= image_tag("o.jpg")%></br>
 				<div class="caption">
 				    <p class = "chosen_font">
-				    	Bold Mountain Coffee’s specialtybreakfast BLT. Hand made 5 minutes before pick up.
+				    	Bold Mountain Coffee’s specialty breakfast BLT. Hand made 5  minutes before pick up.
 				    </p>
-				    </br>
-				    <%= f.label :sandwich_qty, "Qty:" %>
-				    <%= f.number_field :sandwich_qty, in: 1..20, step: 1 %>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class = "row">
+		<div class="col-sm-12 col-md-4">
+			<div class = "pull-right">
+		    	<%= f.label :java_qty, "Qty: ", :class => "pick" %>
+		    	<%= f.number_field :java_qty, in: 1..20, step: 1, :class => "bold_num_field" %>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-4">
+			<div class = "pull-right">				    	
+		    	<%= f.label :beans_qty, "Qty: ", :class => "pick" %>
+		    	<%= f.number_field :beans_qty, in: 1..20, step: 1, :class => "bold_num_field" %>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-4">
+			<div class = "pull-right">
+		    	<%= f.label :sandwich_qty, "Qty: ", :class => "pick" %>
+		    	<%= f.number_field :sandwich_qty, in: 1..20, step: 1, :class => "bold_num_field"%>
+			</div>			
+		</div>
+
+	</div>
+	</br></br>
 	<div class = "row">
 		<div class = "col-sm-9">
-			<%= f.label :order_notess, "Order Notes & Specifics" %>
-			<%= f.text_area :order_notes, :class =>	"form-control", rows: "10" %>
+			<%= f.label :order_notes, "Order Notes & Specifics", :class => 'pick' %>
+			<%= f.text_area :order_notes, :class =>	"form-width", rows: "10" %>
 		</div>
 		<div class = "col-sm-3">
 			</br></br>
-			<%= f.label :pick_up_time, "Pick up time: " %>
-			<%= f.time_field :pick_up_time, :value => Time.now.strftime("%I:%M %p") %>  
+			<div class = "pull-right">
+				<%= f.label :pick_up_time, "Pick up time: ", :class => "pick" %>
+				<%= f.time_field :pick_up_time, :class => "time_field" %>  
+			</div>
 			</br></br></br></br></br></br></br>
 		</div>
 
 		<div class = "actions">
-			<%= f.submit :class => "btn btn-default", :value => "Process" %>
+			<%= f.submit :class => "btn-process pull-right", :value => "Process Order" %>
 		</div>
 	</div>
 <% end %>

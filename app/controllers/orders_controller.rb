@@ -1,12 +1,13 @@
 class OrdersController < ApplicationController
 	protect_from_forgery except: :tokeninput
-	# before_filter :authenticate_user!
+	before_filter :authenticate_user!
 	def new
 		@order = Order.new
 	end
 
 	def create
 		@order = Order.new(order_params)
+		@order.customer_name = current_user.name
 		respond_to do |format|
 			if @order.save
 				format.html{render :new, notice: "Order has been created!"}
