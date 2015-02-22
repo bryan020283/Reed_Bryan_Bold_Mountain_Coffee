@@ -19,11 +19,18 @@
 .logo{
 	height: 100%;
 }
-
+.order_font{
+	font-family: Helvetica Neue;
+	font-size: 1.5em;
+}
 .chosen_font{
 	font-family: Helvetica Neue;
 }
-
+.italic_font{
+	font-style: italic;
+	font-size: 1.5em;
+	font-family: Helvetica Neue;
+}
 .navbar{
 	background-image: url("header.jpg");
 	background-size: 100%;

@@ -10,11 +10,14 @@ class OrdersController < ApplicationController
 		@order.customer_name = current_user.name
 		respond_to do |format|
 			if @order.save
-				format.html{render :new, notice: "Order has been created!"}
+				format.html{render :show, notice: "Order has been created!"}
 			else
 				format.html{render :new, @order.errors, status: :unprocessable_entity}
 			end
 		end
+	end
+
+	def show
 	end
 
 	private

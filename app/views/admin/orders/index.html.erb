@@ -5,6 +5,9 @@
 			<tr class = "order_row">
 				<th><center>Order #</center></th>
 				<th><center>Name</center></th>
+				<th><center>Java Qty</center></th>
+				<th><center>Beans Qty</center></th>
+				<th><center>Sandwich Qty</center></th>
 				<th><center>Pick up time</center></th>
 				<th><center>Order details</center></th>
 				<th><center>Complete</center></th>
@@ -16,6 +19,9 @@
 				<tr class = "order_row">
 					<td><center><%= order.id %></center></td>
 					<td><center><%= order.customer_name%></center></td>
+					<td><center><%= order.java_qty%></center></td>
+					<td><center><%= order.beans_qty%></center></td>
+					<td><center><%= order.sandwich_qty%></center></td>
 					<td><center><%= order.pick_up_time%></center></td>
 					<td><center><%= order.order_notes%></center></td>
 					<td><center><%= link_to admin_order_path(order), method: :delete, "data-confirm" => 'Are you sure you want to delete this item?' do %> <i class = "glyphicon glyphicon-remove"></i> <% end %></td>

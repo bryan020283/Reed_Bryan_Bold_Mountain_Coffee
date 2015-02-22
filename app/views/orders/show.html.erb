@@ -66,16 +66,17 @@
 		</div>
 		<div class = "col-sm-4">
 			</br></br>
-			<div class = "pull-right">
+			<p class = "italic_font">Thank you for your order!</p>
+			</br>
+			<p class = "order_font">Your order has been recieved and will be ready when you arrive at the selected time!</p>
+
+			<div class = "pull-left">
 				<%= f.label :pick_up_time, "Pick up time: ", :class => "pick" %>
 				<%= f.time_field :pick_up_time, :class => "time_field" %>  
 			</div>
-			</br></br></br></br></br></br></br>
+
 		</div>
 
-		<div class = "actions">
-			<%= f.submit :class => "btn-process pull-right", :value => "Process Order" %>
-		</div>
 	</div>
 <% end %>
 </br></br></br>
